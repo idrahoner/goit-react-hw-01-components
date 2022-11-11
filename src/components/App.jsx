@@ -1,6 +1,9 @@
 import Profile from './profile/Profile';
 import user from '../data/user.json';
 
+import Statistic from './statistic/Statistic';
+import data from '../data/data.json';
+
 export const App = () => {
   return (
     <>
@@ -23,6 +26,7 @@ export const App = () => {
           likes={user.stats.likes}
           views={user.stats.views}
         />
+        <Statistic schedule={data} />
         React homework template
       </div>
     </>
