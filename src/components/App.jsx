@@ -26,7 +26,7 @@ export const App = () => {
           likes={user.stats.likes}
           views={user.stats.views}
         />
-        <Statistic schedule={data} />
+        <Statistic title="Upload stats" schedule={data} />
         React homework template
       </div>
     </>
