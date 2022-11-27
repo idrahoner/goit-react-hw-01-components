@@ -10,8 +10,6 @@ import friends from '../data/friends.json';
 import TransactionHistory from './transactions/TransactionHistory';
 import transactions from '../data/transactions.json';
 
-// this string for check git
-
 export const App = () => {
   return (
     <div
