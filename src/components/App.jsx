@@ -1,14 +1,14 @@
-import Profile from './Profile/Profile';
+import Profile from './profile/Profile';
 import user from 'data/user.json';
 
-import Statistics from './Statistics/Statistics';
+import Statistics from './statistics/Statistics';
 import data from '../data/data.json';
 import { filterFormats } from 'components/utils';
 
-import FriendList from './FriendList/FriendList';
+import FriendList from './friendList/FriendList';
 import friends from '../data/friends.json';
 
-import TransactionHistory from './Transactions/TransactionHistory';
+import TransactionHistory from './transactions/TransactionHistory';
 import transactions from '../data/transactions.json';
 
 const filteredData = filterFormats(data);
