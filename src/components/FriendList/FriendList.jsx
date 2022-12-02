@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
 
+import { friendsImages } from 'assets';
+
 export default function FriendList({ list }) {
   return (
     <ul className="friend-list">
-      {list.map(element => (
+      {list.map((element, index) => (
         <FriendListItem
           key={element.id}
-          avatar={element.avatar}
+          avatar={friendsImages[index]}
           name={element.name}
           isOnline={element.isOnline}
         />

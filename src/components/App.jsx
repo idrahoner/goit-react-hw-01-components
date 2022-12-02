@@ -1,21 +1,23 @@
-import Profile from './profile/Profile';
-import user from '../data/user.json';
+import Profile from './Profile/Profile';
+import user from 'data/user.json';
 
-import Statistics from './statistics/Statistics';
+import Statistics from './Statistics/Statistics';
 import data from '../data/data.json';
+import { filterFormats } from 'components/utils';
 
-import FriendList from './friend-list/FriendList';
+import FriendList from './FriendList/FriendList';
 import friends from '../data/friends.json';
 
-import TransactionHistory from './transactions/TransactionHistory';
+import TransactionHistory from './Transactions/TransactionHistory';
 import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -31,7 +33,7 @@ export const App = () => {
         likes={user.stats.likes}
         views={user.stats.views}
       />
-      <Statistics title="Upload stats" schedule={data} />
+      <Statistics title="Upload stats" schedule={filterFormats(data)} />
       <FriendList list={friends} />
       <TransactionHistory list={transactions} />
     </div>
