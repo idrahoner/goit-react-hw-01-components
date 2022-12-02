@@ -5,7 +5,7 @@ import Statistics from './statistics/Statistics';
 import data from '../data/data.json';
 import { filterFormats } from 'components/utils';
 
-import FriendList from './friendList/FriendList';
+import FriendList from './friend-list/FriendList';
 import friends from '../data/friends.json';
 
 import TransactionHistory from './transactions/TransactionHistory';
