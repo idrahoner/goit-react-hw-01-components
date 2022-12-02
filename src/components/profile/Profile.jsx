@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import css from './Profile.module.css';
+import css from 'components/profile/Profile.module.css';
 
 export default function Profile({
   name,
