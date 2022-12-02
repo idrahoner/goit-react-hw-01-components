@@ -1,19 +1,19 @@
 .statistics {
-  padding: 150px;
-  margin-bottom: 40px;
-  background-color: rgb(232, 236, 241);
+  margin-bottom: var(--block-margin);
+
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .title {
   display: block;
 
-  padding: 15px;
+  padding: var(--inner-padding);
 
-  font-size: 36px;
+  font-size: var(--lg-font-size);
   text-align: center;
   text-transform: uppercase;
-
-  background-color: #ffffff;
 }
 
 .statList {
@@ -26,21 +26,21 @@
 
   min-width: 60px;
 
-  padding: 15px 10px;
+  padding: var(--inner-padding);
 }
 
 .label,
 .percentage {
   text-align: center;
-  color: #ffffff;
+  color: var(--light-color);
 }
 
 .label {
   margin-bottom: 4px;
 
-  font-size: 16px;
+  font-size: var(--sm-font-size);
 }
 
 .percentage {
-  font-size: 24px;
+  font-size: var(--md-font-size);
 }

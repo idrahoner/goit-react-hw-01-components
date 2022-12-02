@@ -1,25 +1,25 @@
 .transactionHistory {
   min-width: 600px;
 
-  margin-bottom: 40px;
+  margin-bottom: var(--block-margin);
 
-  font-size: 24px;
+  font-size: var(--md-font-size);
   text-align: center;
 
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .transactionHead {
-  background-color: rgb(84, 185, 210);
-  color: #ffffff;
+  background-color: var(--table-head-color);
+  color: var(--light-color);
 }
 
 .headRow {
-  outline: 2px solid salmon;
   text-transform: uppercase;
 }
 
 th {
-  padding: 15px;
+  padding: var(--inner-padding);
 }

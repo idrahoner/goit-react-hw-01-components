@@ -1,17 +1,17 @@
 .profile {
   width: 400px;
 
-  margin: 40px auto;
-  padding: 150px;
+  margin: var(--block-margin) auto;
 
-  background-color: rgb(232, 236, 241);
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .description {
   padding: 30px 15px;
 
   text-align: center;
-  background-color: #ffffff;
 }
 
 .avatar {
@@ -23,14 +23,14 @@
 }
 
 .name {
-  font-size: 36px;
+  font-size: var(--xl-font-size);
   margin-bottom: 8px;
 }
 
 .tag,
 .location {
-  font-size: 24px;
-  color: grey;
+  font-size: var(--md-font-size);
+  color: var(--profile-text-color);
 }
 
 .tag {
@@ -39,6 +39,8 @@
 
 .stats {
   display: flex;
+
+  border-top: 1px solid var(--profile-border);
 }
 
 .statsItem {
@@ -47,26 +49,25 @@
 
   flex-basis: 33.3333%;
 
-  padding: 16px 5px;
+  padding: var(--inner-padding);
 
-  background-color: rgb(249, 246, 249);
-  border: 1px solid rgb(230, 234, 240);
+  background-color: var(--profile-stats-color);
 }
 
 .statsItem:not(:last-child) {
-  border-right: none;
+  border-right: 1px solid var(--profile-border);
 }
 
 .label {
   margin-bottom: 4px;
 
-  font-size: 16px;
+  font-size: var(--sm--font-size);
   text-align: center;
 
-  color: grey;
+  color: var(--profile-text-color);
 }
 
 .quantity {
-  font-size: 32px;
+  font-size: var(--lg-font-size);
   text-align: center;
 }

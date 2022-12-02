@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import css from './profile.module.css';
+import css from './Profile.module.css';
 import { friendAvatar } from 'assets';
 
 export default function Profile({
