@@ -11,6 +11,8 @@ import friends from '../data/friends.json';
 import TransactionHistory from './Transactions/TransactionHistory';
 import transactions from '../data/transactions.json';
 
+const filteredData = filterFormats(data);
+
 export const App = () => {
   return (
     <div
@@ -28,11 +30,9 @@ export const App = () => {
         tag={user.tag}
         avatar={user.avatar}
         location={user.location}
-        followers={user.stats.followers}
-        likes={user.stats.likes}
-        views={user.stats.views}
+        stats={user.stats}
       />
-      <Statistics title="Upload stats" schedule={filterFormats(data)} />
+      <Statistics title="Upload stats" schedule={filteredData} />
       <FriendList list={friends} />
       <TransactionHistory list={transactions} />
     </div>
