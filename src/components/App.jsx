@@ -1,17 +1,17 @@
-import Profile from 'components/profile/Profile';
-import user from 'data/user.json';
+// import Profile from 'components/profile/Profile';
+// import user from 'data/user.json';
 
-import Statistics from 'components/statistics/Statistics';
-import data from 'data/data.json';
-import { filterFormats } from 'components/utils';
+// import Statistics from 'components/statistics/Statistics';
+// import data from 'data/data.json';
+// import { filterFormats } from 'components/utils';
 
-import FriendList from 'components/friend-list/FriendList';
-import friends from 'data/friends.json';
+// import FriendList from 'components/friend-list/FriendList';
+// import friends from 'data/friends.json';
 
-import TransactionHistory from 'components/transactions/TransactionHistory';
-import transactions from 'data/transactions.json';
+// import TransactionHistory from 'components/transactions/TransactionHistory';
+// import transactions from 'data/transactions.json';
 
-const filteredData = filterFormats(data);
+// const filteredData = filterFormats(data);
 
 export const App = () => {
   return (
@@ -25,7 +25,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile
+      {/* <Profile
         name={user.username}
         tag={user.tag}
         avatar={user.avatar}
@@ -34,7 +34,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" schedule={filteredData} />
       <FriendList list={friends} />
-      <TransactionHistory list={transactions} />
+      <TransactionHistory list={transactions} /> */}
     </div>
   );
 };
