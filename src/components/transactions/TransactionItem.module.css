@@ -1,0 +1,11 @@
+td {
+  padding: 15px;
+}
+
+.bodyRow:nth-child(2n) {
+  background-color: rgb(237, 241, 243);
+}
+
+.type {
+  text-transform: capitalize;
+}

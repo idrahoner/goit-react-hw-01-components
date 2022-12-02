@@ -1,0 +1,25 @@
+.transactionHistory {
+  min-width: 600px;
+
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  text-align: center;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.transactionHead {
+  background-color: rgb(84, 185, 210);
+  color: #ffffff;
+}
+
+.headRow {
+  outline: 2px solid salmon;
+  text-transform: uppercase;
+}
+
+th {
+  padding: 15px;
+}
