@@ -5,12 +5,12 @@ import css from 'components/friend-list/FriendList.module.css';
 export default function FriendList({ list }) {
   return (
     <ul className={css.friendList}>
-      {list.map(element => (
+      {list.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
-          key={element.id}
-          avatar={element.avatar}
-          name={element.name}
-          isOnline={element.isOnline}
+          key={id}
+          avatar={avatar}
+          name={name}
+          isOnline={isOnline}
         />
       ))}
     </ul>
@@ -18,5 +18,9 @@ export default function FriendList({ list }) {
 }
 
 FriendList.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.object).isRequired,
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };

@@ -3,7 +3,7 @@ import user from 'data/user.json';
 
 import Statistics from 'components/statistics/Statistics';
 import data from 'data/data.json';
-import { filterFormats } from 'components/utils';
+import { filterFormats } from 'utils';
 
 import FriendList from 'components/friend-list/FriendList';
 import friends from 'data/friends.json';

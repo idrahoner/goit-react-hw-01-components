@@ -1,5 +1,5 @@
 export function filterFormats(array) {
-  return array.reduce((accum, element, index) => {
+  return array.reduce((accum, element) => {
     const repeatedFormat = accum.find(
       accElement => accElement.label === element.label
     );
